@@ -1,10 +1,10 @@
-# ⚙️ Rasp Automação - Soluções Industriais
+# ������ Rasp Automação - Soluções Industriais
 
 Uma landing page institucional moderna, performática e 100% responsiva para a **Rasp Automação**, desenvolvida para apresentar serviços de automação de máquinas, engenharia de processos, montagem de painéis elétricos e programação de CLPs e IHMs.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## ��� Tecnologias Utilizadas
 
 - **HTML5 Semântico**: Estrutura acessível (`<header>`, `<main>`, `<section>`, `<footer>`), com meta tags completas para SEO e Open Graph.
 - **CSS3 Vanilla (Custom Properties)**: Estilização profissional baseada no guia de design *Industrial Precision* (`DESIGN.md`), utilizando variáveis CSS, layout flexbox, CSS Grid (Bento Grid) e media queries.
@@ -13,7 +13,7 @@ Uma landing page institucional moderna, performática e 100% responsiva para a *
 
 ---
 
-## 📂 Estrutura do Projeto
+## ��� Estrutura do Projeto
 
 ```text
 .
@@ -37,12 +37,15 @@ Uma landing page institucional moderna, performática e 100% responsiva para a *
 │       └── logo-footer.png
 ├── DESIGN.md                # Diretrizes do sistema de design Industrial Precision
 ├── README.md                # Documentação completa do projeto
-└── .gitignore               # Arquivos e pastas ignorados pelo Git
+├── .gitignore               # Arquivos e pastas ignorados pelo Git
+├── .env.example             # Template de variáveis de ambiente
+├── setup-github-remote.ps1  # Script PowerShell para deploy no GitHub
+��── setup-github-remote.sh   # Script Bash para deploy no GitHub
 ```
 
 ---
 
-## ✨ Principais Destaques & Melhorias
+## �� Principais Destaques & Melhorias
 
 1. **Design System "Industrial Precision"**:
    - Paleta de cores baseada em tons escuros (*Industrial Charcoal*) com destaques em vermelho profundo e laranja técnico.
@@ -59,43 +62,65 @@ Uma landing page institucional moderna, performática e 100% responsiva para a *
 
 ---
 
-## 💻 Como Visualizar Localmente
+## ��� Como Visualizar Localmente
 
 Não é necessário instalar nenhuma dependência ou servidor Node.js. Por se tratar de um projeto estático limpo:
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/rasp-automacao.git
+   git clone https://github.com/professortoniati/2608-rasp.git
    ```
 2. Acesse a pasta do projeto:
    ```bash
-   cd rasp-automacao
+   cd 2608-rasp
    ```
 3. Abra o arquivo `index.html` diretamente no seu navegador de preferência (ou utilize extensões como o *Live Server* do VS Code).
 
 ---
 
-## 🌐 Como Hospedar no GitHub Pages
+## ��� Como Hospedar no GitHub Pages
 
 Para publicar este site gratuitamente usando o **GitHub Pages**:
 
-1. Suba este projeto para um novo repositório público no GitHub:
+1. Suba este projeto para o repositório no GitHub:
    ```bash
    git init
    git add .
    git commit -m "feat: refatoracao completa do site estatico Rasp Automacao"
    git branch -M main
-   git remote add origin https://github.com/seu-usuario/rasp-automacao.git
+   git remote add origin https://github.com/professortoniati/2608-rasp.git
    git push -u origin main
+   ```
+   Ou utilize o script automatizado:
+   ```bash
+   # Windows PowerShell
+   .\setup-github-remote.ps1
+   
+   # Linux/macOS/Git Bash
+   chmod +x setup-github-remote.sh
+   ./setup-github-remote.sh
    ```
 2. No repositório no GitHub, acesse **Settings** > **Pages** (no menu lateral).
 3. Na opção **Build and deployment**:
    - **Source**: Selecione `Deploy from a branch`.
    - **Branch**: Escolha `main` / `root` (pasta raiz) e clique em **Save**.
-4. Aguarde alguns segundos. O GitHub gerará um link público para acesso (ex: `https://seu-usuario.github.io/rasp-automacao/`).
+4. Aguarde alguns segundos. O GitHub gerará um link público para acesso: `https://professortoniati.github.io/2608-rasp/`.
 
 ---
 
-## 📄 Licença
+## ��� Segurança & Boas Práticas
+
+Este projeto segue práticas de segurança para publicação segura:
+
+- **`.gitignore` robusto**: Ignora arquivos sensíveis (`.env`, `node_modules`, logs, builds, caches, IDEs)
+- **`.env.example`**: Documenta variáveis de ambiente necessárias sem expor segredos reais
+- **Nenhum segredo hardcoded**: Verificação completa do código - nenhum token, senha, API key ou credencial encontrado no código-fonte
+- **Formulário de contato**: Preparado para integração via variáveis de ambiente (ver `.env.example`)
+
+> ������ **Importante**: Nunca comite o arquivo `.env` real. Use `.env.example` como template.
+
+---
+
+## ��� Licença
 
 Este projeto é de uso institucional da **Rasp Automação**. Todos os direitos reservados.
