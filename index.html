@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasp Automação - Soluções Industriais e Automação</title>
+    
+    <!-- Meta Tags SEO -->
+    <meta name="description" content="Empresa especializada em soluções industriais, automação de máquinas e processos, instalações elétricas, montagem de painéis e programação de CLPs e IHMs.">
+    <meta name="keywords" content="Automação Industrial, Painéis Elétricos, CLP, IHM, Instalações Elétricas, Engenharia, Rasp Automação">
+    <meta name="author" content="Rasp Automação">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Redes Sociais -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rasp Automação - Soluções Industriais">
+    <meta property="og:description" content="Uma empresa em conexão com sua automação. Soluções avançadas para otimização de processos industriais.">
+    <meta property="og:image" content="./assets/images/hero-bg.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.png">
+
+    <!-- Typography & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet Local Relativo -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- JavaScript Local Relativo -->
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header & Navegação Semântica -->
+    <header class="site-header" id="main-header">
+        <div class="nav-container container">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-logo" aria-label="Rasp Automação - Página Inicial">
+                <img src="./assets/images/logo.png" alt="Logo da Rasp Automação">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav" aria-label="Navegação Principal">
+                <a href="#quem-somos" class="nav-link">Quem Somos</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+
+            <!-- Action Header -->
+            <div class="header-phone-wrapper">
+                <a href="tel:11963987438" class="header-phone" aria-label="Ligue para nós: 11 96398-7438">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">phone_in_talk</span>
+                    <span>11 96398-7438</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Alternar Menu de Navegação" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div class="mobile-menu" id="mobile-menu" aria-label="Menu Mobile">
+            <div class="mobile-menu-inner container">
+                <a href="#quem-somos" class="nav-link">Quem Somos</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#contato" class="nav-link">Contato</a>
+                <div class="mobile-phone-wrapper">
+                    <a href="tel:11963987438" class="header-phone">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">phone_in_talk</span>
+                        <span>11 96398-7438</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="inicio">
+            <div class="hero-bg">
+                <img src="./assets/images/hero-bg.jpg" alt="Fábrica industrial altamente automatizada com braços robóticos e iluminação técnica" class="hero-bg-img">
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="container hero-content">
+                <div class="hero-text-block">
+                    <div class="badge-tag">
+                        <span class="pulse-dot"></span>
+                        Automação de Máquinas e Processos
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Uma empresa em <span class="text-gradient">conexão</span> com sua automação
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Soluções avançadas para otimização de processos industriais, garantindo eficiência, segurança e inovação para o seu negócio.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#servicos" class="btn btn-primary">
+                            Conheça nossos serviços
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                        <a href="#contato" class="btn btn-secondary">
+                            Fale com um especialista
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quem Somos Section -->
+        <section class="section-padding bg-surface-alt" id="quem-somos">
+            <div class="container">
+                <div class="grid-2col">
+                    <div class="space-y-6">
+                        <div>
+                            <p class="section-header-tag">Quem somos</p>
+                            <h2 class="section-title">Excelência em Automação Industrial</h2>
+                        </div>
+
+                        <div class="glass-card">
+                            <p>
+                                A <strong>Rasp Automação</strong> é uma empresa especializada nas áreas de instalações elétricas, automação industrial, montagem de painéis elétricos e projetos industriais.
+                            </p>
+
+                            <ul class="checklist">
+                                <li class="checklist-item">
+                                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                    <span>Instalações elétricas industriais e residenciais</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                    <span>Controle e Automação</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                    <span>Montagem de Painéis Elétricos</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                    <span>Projetos Elétricos</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                    <span>Manutenção em Geral</span>
+                                </li>
+                                <li class="checklist-item">
+                                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                    <span>Programação de CLPs e IHMs</span>
+                                </li>
+                            </ul>
+
+                            <p class="subtext-accent">Veja mais detalhes abaixo!</p>
+                        </div>
+                    </div>
+
+                    <div class="image-card-wrapper">
+                        <img src="./assets/images/quem-somos.jpg" alt="Braço robótico industrial moderno e lâmpada conceitual simbolizando inovação elétrica e automação">
+                        <div class="image-card-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços Section (Bento Grid) -->
+        <section class="section-padding relative overflow-hidden" id="servicos">
+            <div class="tech-bg-pattern"></div>
+            
+            <div class="container">
+                <div class="section-intro">
+                    <p class="section-header-tag">Nossos Serviços</p>
+                    <h2 class="section-title">Soluções Completas para sua Indústria</h2>
+                    <p>Passe o mouse ou toque nos cards para visualizar a descrição detalhada de cada serviço especialista.</p>
+                </div>
+
+                <div class="bento-grid">
+                    <!-- Card 1 -->
+                    <article class="service-card" tabindex="0">
+                        <div class="service-card-img-wrapper">
+                            <img src="./assets/images/servico-instalacoes.jpg" alt="Eletricista realizando testes técnicos em painel elétrico industrial com multímetro digital">
+                            <div class="service-card-img-overlay"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-card-title">Instalações Elétricas</h3>
+                        </div>
+                        <div class="service-card-description">
+                            Execução de infraestrutura e instalações elétricas industriais e prediais com rigor técnico e conformidade com normas vigentes.
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="service-card" tabindex="0">
+                        <div class="service-card-img-wrapper">
+                            <img src="./assets/images/servico-automacao.jpg" alt="Braço robótico industrial de alta precisão operando em linha de produção moderna">
+                            <div class="service-card-img-overlay"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-card-title">Controle e Automação</h3>
+                        </div>
+                        <div class="service-card-description">
+                            Integração de sistemas de controle, otimização de processos fabris e implementação de tecnologias industriais avançadas.
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="service-card" tabindex="0">
+                        <div class="service-card-img-wrapper">
+                            <img src="./assets/images/servico-paineis.jpg" alt="Painel elétrico industrial de comando organizado com disjuntores, relés e CLP">
+                            <div class="service-card-img-overlay"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-card-title">Montagem de Painéis</h3>
+                        </div>
+                        <div class="service-card-description">
+                            Projeto e montagem de quadros de comando, distribuição e força (QGBTs, CCMs) seguindo rigorosas normas técnicas.
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="service-card" tabindex="0">
+                        <div class="service-card-img-wrapper">
+                            <img src="./assets/images/servico-projetos.jpg" alt="Desenho técnico de projetos elétricos e esquemas em mesa de engenharia com tablet CAD">
+                            <div class="service-card-img-overlay"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-card-title">Projetos Elétricos</h3>
+                        </div>
+                        <div class="service-card-description">
+                            Elaboração de projetos elétricos completos, diagramas unifilares e documentação técnica detalhada para engenharia.
+                        </div>
+                    </article>
+
+                    <!-- Card 5 -->
+                    <article class="service-card" tabindex="0">
+                        <div class="service-card-img-wrapper">
+                            <img src="./assets/images/servico-manutencao.jpg" alt="Técnico realizando manutenção preventiva e preditiva em componentes de máquinas industriais">
+                            <div class="service-card-img-overlay"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-card-title">Manutenção em Geral</h3>
+                        </div>
+                        <div class="service-card-description">
+                            Serviços de manutenção preventiva, preditiva e corretiva em sistemas elétricos e equipamentos de automação.
+                        </div>
+                    </article>
+
+                    <!-- Card 6 -->
+                    <article class="service-card" tabindex="0">
+                        <div class="service-card-img-wrapper">
+                            <img src="./assets/images/servico-programacao.jpg" alt="Tela de computador exibindo código de programação Ladder para controladores lógicos programáveis (CLP)">
+                            <div class="service-card-img-overlay"></div>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-card-title">Programação CLPs e IHMs</h3>
+                        </div>
+                        <div class="service-card-description">
+                            Desenvolvimento de algoritmos de controle, parametrização e interfaces homem-máquina (IHM) personalizadas.
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section class="section-padding bg-surface-alt relative" id="contato">
+            <div class="container">
+                <div class="section-intro">
+                    <p class="section-header-tag">Contato</p>
+                    <h2 class="section-title">Fale Conosco</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Formulário de Contato -->
+                    <div class="glass-card">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="nome" class="form-label">Nome Completo *</label>
+                                <input type="text" id="nome" name="nome" class="form-control" placeholder="Seu nome" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">E-mail *</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="seuemail@empresa.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefone" class="form-label">Telefone / WhatsApp</label>
+                                <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(11) 99999-9999">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="assunto" class="form-label">Assunto</label>
+                                <input type="text" id="assunto" name="assunto" class="form-control" placeholder="Orçamento, Dúvida ou Projeto">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensagem" class="form-label">Mensagem *</label>
+                                <textarea id="mensagem" name="mensagem" class="form-control" rows="4" placeholder="Descreva brevemente sua necessidade..." required></textarea>
+                            </div>
+
+                            <div style="display: flex; justify-content: flex-end; margin-top: 1.5rem;">
+                                <button type="submit" class="btn btn-primary">
+                                    Enviar Mensagem
+                                    <span class="material-symbols-outlined">send</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Cartão Informativo de Contato -->
+                    <div class="glass-card contact-info-card">
+                        <span class="material-symbols-outlined bg-watermark-icon" style="font-variation-settings: 'FILL' 1;">engineering</span>
+                        
+                        <div class="contact-info-content">
+                            <h3 class="contact-info-title">Rasp Automação</h3>
+                            
+                            <div class="contact-detail-item">
+                                <span class="material-symbols-outlined">phone_iphone</span>
+                                <a href="tel:11963987438" class="contact-link">11 96398-7438 (Vivo)</a>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <span class="material-symbols-outlined">mail</span>
+                                <a href="mailto:contato@raspautomacao.com.br" class="contact-link">contato@raspautomacao.com.br</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé Semântico -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Marca & Descrição -->
+                <div class="footer-brand">
+                    <img src="./assets/images/logo-footer.png" alt="Rasp Automação Logo Rodapé">
+                    <p>
+                        Soluções completas em automação industrial, instalações elétricas e engenharia de controle, conectando sua empresa ao futuro da indústria.
+                    </p>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div>
+                    <h4 class="footer-column-title">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#quem-somos" class="footer-link">Quem Somos</a></li>
+                        <li><a href="#servicos" class="footer-link">Serviços</a></li>
+                        <li><a href="#contato" class="footer-link">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Informações & Redes -->
+                <div>
+                    <h4 class="footer-column-title">Informações</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Política de Privacidade</a></li>
+                    </ul>
+
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Siga-nos no Instagram">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Siga-nos no Facebook">
+                            <svg viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>2026 © Rasp Automação - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button (WhatsApp) -->
+    <a href="https://wa.me/5511963987438" target="_blank" rel="noopener noreferrer" class="fab-whatsapp" aria-label="Fale conosco pelo WhatsApp">
+        <span class="fab-ping"></span>
+        <svg viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.161.453-.892.872-1.277.933-.298.046-.723.136-2.422-.559-2.049-.838-3.366-2.91-3.468-3.046-.102-.136-.827-1.101-.827-2.102 0-1.001.524-1.493.714-1.696.19-.203.415-.254.55-.254.135 0 .27.001.391.006.126.006.297-.046.467.362.175.42.598 1.464.651 1.57.054.107.09.231.023.366-.068.136-.102.22-.204.341-.102.121-.215.263-.306.353-.102.102-.213.214-.093.421.12.207.534.882 1.144 1.433.789.712 1.455.932 1.658 1.034.204.102.322.085.441-.051.12-.136.517-.601.652-.808.135-.207.27-.174.458-.102.188.072 1.189.56 1.392.661.203.102.338.153.388.238.051.085.051.493-.11.946z"/>
+            <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 22c-5.514 0-10-4.486-10-10s4.486-10 10-10 10 4.486 10 10-4.486 10-10 10z"/>
+        </svg>
+    </a>
+
+    <!-- Toast Notification Element -->
+    <div id="toast-notification" class="toast-notification" role="status" aria-live="polite"></div>
+
+</body>
+</html>
